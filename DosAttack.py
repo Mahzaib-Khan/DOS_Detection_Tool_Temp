@@ -29,12 +29,10 @@ def randomport():
 
 
 mode = int(input("This program launch a DOS attack on a specific target\nEnter 1 to have nothing spoofed\nEnter 2 to "
-                 "spoof "
-                 "your IP\nEnter 3 to spoof your MAC Address\nEnter 4 to spoof your MAC Address and IP\n"))
+                 "spoof your IP\nEnter 3 to spoof your MAC Address\nEnter 4 to spoof your MAC Address and IP\n"))
 if mode == 1:
     destIP = input("Enter the IP address of the target")
-    T = input(
-        "Enter 1T for 1 packet each 0.01sec\nEnter 2T for 1 packet each 0.1 sec\nEnter 3T for 1 packet each 1 "
+    T = input("Enter 1T for 1 packet each 0.01sec\nEnter 2T for 1 packet each 0.1 sec\nEnter 3T for 1 packet each 1 "
         "sec\nEnter 4T for 1 packet each 5 sec\n")
     if T == "1T":
         while True:
