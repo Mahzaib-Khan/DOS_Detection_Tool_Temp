@@ -1,20 +1,19 @@
 # DosAttack_DosDetection
-Description:
 Attacker program:
-This program creates a TCP syn attack on a specified IP address specified by the user, and then would run different ways of attack depending on how anonymously the attackers want to proceed (the code was written with the help of the tool scapy however all codes were written by Hussein Nasrallah and none were taken from internet)
+This program creates a TCP syn attack on a specified IP address specified by the user, and then would run different ways of attack depending on how anonymously the attackers want to proceed 
 
 Detection program:
 This program detects the Denial of Service attack in 3 cases:
--	Many SYN packets (mainly more than 15) having the same IP address are received in a short period of time. (the code was written by Nour Ardo and none was taken from the internet) 
--	Many SYN packets having the same MAC address are received in a short period of time. (the code was written by Justin El Halabi and none was taken from the internet)
--	Large traffic is detected within a short period of time to signal a possibility of denial of service. This would be helpful for the attacks where the IP or the MAC addresses are spoofed. (the code was written by Nour Ardo and none was taken from the internet)
+-	Many SYN packets (mainly more than 15) having the same IP address are received in a short period of time. 
+-	Many SYN packets having the same MAC address are received in a short period of time. 
+-	Large traffic is detected within a short period of time to signal a possibility of denial of service. This would be helpful for the attacks where the IP or the MAC addresses are spoofed. 
 Note that the attacks with significant time interval between consecutive packets (attacks with 3T and 4T) are hard to be detected. They could be hidden as normal traffic. 
 
 There are 4 programs:
-1.	DosAttack.py: the DOS attack program (written by Hussein Nasrallah)
-2.	IP_Detection.py: DOS detection according to IP Address (written by Nour Ardo)
-3.	Mac_Detection.py: DOS detection according to MAC address (written by Justin El Halabi)
-4.	DosDetection.py: Complete DOS detection (Combined the 2 and 3 programs above by Justin El Halabi)
+1.	DosAttack.py: the DOS attack program 
+2.	IP_Detection.py: DOS detection according to IP Address
+3.	Mac_Detection.py: DOS detection according to MAC address 
+4.	DosDetection.py: Complete DOS detection 
 
 Instructions how to run the programs:
 
